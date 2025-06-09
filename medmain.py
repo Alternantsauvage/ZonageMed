@@ -9,7 +9,7 @@ st.title("Recherche de zone medical par ville ou code postal")
 # Chargement du fichier CSV
 @st.cache_data
 def charger_donnees():
-    return pd.read_csv("zonmed.csv", sep=',')
+    return pd.read_csv("zonmed_enrichi_final.csv", sep=',')
 
 df = charger_donnees()
 
